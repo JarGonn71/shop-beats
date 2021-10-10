@@ -1,0 +1,73 @@
+.Specs {
+  $self: &;
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  padding-top: 100px;
+  &--title {
+    margin-top: 100px;
+    text-align: center;
+    font-size: 110px;
+    line-height: 0.9;
+    background: linear-gradient(
+      180deg,
+      rgba(153, 153, 153, 0.864) 24%,
+      rgba(143, 142, 142, 0.29) 72%,
+      rgba(146, 146, 146, 0.03) 90%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #0b2349;
+    display: flex;
+    justify-content: center;
+    opacity: 1;
+  }
+  &--content {
+    display: flex;
+    width: 100%;
+  }
+  &--info {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-right: 50px;
+  }
+  &--itemInfo:first-child {
+    margin-right: 0px;
+    animation-duration: 4s;
+  }
+  &--itemInfo:last-child {
+    margin-right: 0px;
+    animation-duration: 5s;
+  }
+  &--itemInfo {
+    margin: 12px 0px;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.3rem;
+    width: 25%;
+    color: white;
+    animation: specsInfo 5s ease-in-out infinite;
+    svg {
+    }
+    span {
+      opacity: 0.7;
+      font-size: 1rem;
+    }
+  }
+  &--img {
+    width: 50%;
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 75%;
+      transition: left 300ms linear;
+      animation: specsImg 10s linear infinite;
+    }
+  }
+}
+

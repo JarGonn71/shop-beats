@@ -1,0 +1,230 @@
+.animated {
+    transition: 0.5s ease-in-out;
+    &.fadeInTwo {
+      .windowGet {
+        &--image {
+          animation: showWindowImage 2s ease-in-out;
+        }
+        &--info {
+          animation: showWindowInfo 2s ease-in-out;
+        }
+      }
+    }
+    &.fadeIn {
+      .Products {
+        &--title {
+          animation: showProductTitle 1s ease-in-out;
+        }
+        &--items {
+          animation: showProductItems 1s ease-in-out;
+        }
+      }
+      .Specs {
+        &--title {
+          animation: showTitle 1s ease-in-out;
+        }
+        &--itemInfo {
+          animation: showInfo 1s ease-in-out;
+          direction: 1s;
+        }
+        &--img {
+          animation: showImg 1s ease-in-out;
+        }
+      }
+      .block1 {
+        &--imageBox {
+          animation: showBeatsPreview 1s ease-in-out;
+        }
+  
+        &--info {
+          animation: showInfoHome 1s ease-in-out;
+          h1 {
+            animation: showInfoTitle 2s ease-in-out;
+          }
+        }
+      }
+      .Case {
+        &--title {
+          animation: showTitle 1s ease-in-out;
+        }
+        &--img {
+          animation: showCaseImg 1s ease-in-out;
+        }
+        &--info {
+          animation: showCaseInfo 1s ease-in-out;
+        }
+      }
+    }
+  }
+  
+
+  
+  @keyframes showCaseInfo {
+    0% {
+      transform: translateY(100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes showCaseImg {
+    0% {
+      transform: translateY(-100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes showWindowImage {
+    0% {
+      opacity: 0;
+      transform: translateX(200px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+  
+  @keyframes showWindowInfo {
+    0% {
+      opacity: 0;
+      transform: translateX(-200px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+  
+  
+  
+  @keyframes showBeatsPreview {
+    0% {
+      transform: translateY(-300px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+  
+  @keyframes showInfoHome {
+    0% {
+      transform: translateX(300px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes showInfoTitle {
+    0% {
+      transform: translateX(-300px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0px);
+      opacity: 1;
+    }
+  }
+  
+  
+  
+  @keyframes showImg {
+    0% {
+      opacity: 0;
+      transform: matrix(1, 0, 0, 1, 200, 0);
+    }
+    100% {
+      opacity: 1;
+      transform: matrix(1, 0, 0, 1, 0, 0);
+    }
+  }
+  
+  @keyframes showInfo {
+    0% {
+      opacity: 0;
+      transform: matrix(1, 0, 0, 1, -100, 0);
+    }
+    100% {
+      opacity: 1;
+      transform: matrix(1, 0, 0, 1, 0, 0);
+    }
+  }
+  
+  @keyframes specsImg {
+    0% {
+      transform: matrix(1, 0, 0, 1, 0, 0);
+    }
+    50% {
+      transform: matrix(1, 0, 0, 1, 0, 50);
+    }
+    100% {
+      transform: matrix(1, 0, 0, 1, 0, 0);
+    }
+  }
+  
+  @keyframes specsInfo {
+    0% {
+      transform: matrix(1, 0, 0, 1, 0, 0);
+    }
+    50% {
+      transform: matrix(1, 0, 0, 1, 20, 0);
+    }
+    100% {
+      transform: matrix(1, 0, 0, 1, 0, 0);
+    }
+  }
+  
+  @keyframes showTitle {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+  
+  
+  @keyframes viewProductImage {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-25px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes showProductTitle {
+    0% {
+      transform: translateY(100px);
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+  
+  @keyframes showProductItems {
+    0% {
+      transform: translateY(-100px);
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }

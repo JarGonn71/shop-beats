@@ -1,0 +1,56 @@
+.Navbar {
+  $self: &;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  top: 0;
+  padding: 15px 0px;
+  background: #0000001f;
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(3px);
+  z-index: 10000;
+
+  &--container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &--menu {
+    display: flex;
+    align-items: center;
+    margin-right: 5rem;
+  }
+  &--item {
+    cursor: pointer;
+    list-style-type: none;
+    margin: 0 2rem;
+    opacity: 0.3;
+    font-size: 1.3rem;
+    background: linear-gradient(0deg, #686767e8 24%, #e4eced 59%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: table;
+    transition: 0.3s ease-in-out;
+    &:hover {
+      background: linear-gradient(0deg, #f5f1f1e8 24%, #e4eced 59%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: white;
+      opacity: 1;
+    }
+    &.active {
+      background: linear-gradient(0deg, #f5f1f1e8 24%, #e4eced 59%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: white;
+      opacity: 1;
+    }
+  }
+  svg {
+    font-size: 2.5rem;
+    color: white;
+    margin-left: 2.5rem;
+  }
+}

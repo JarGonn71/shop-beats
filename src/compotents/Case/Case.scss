@@ -1,0 +1,124 @@
+.Case {
+  $self: &;
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 100px;
+  &--title {
+    text-align: center;
+    font-size: 110px;
+    line-height: 0.9;
+    background: linear-gradient(
+      180deg,
+      rgba(153, 153, 153, 0.864) 24%,
+      rgba(143, 142, 142, 0.29) 72%,
+      rgba(146, 146, 146, 0.03) 90%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #0b2349;
+    display: flex;
+    justify-content: center;
+  }
+  &--content {
+    margin-top: 75px;
+    width: 100%;
+    display: flex;
+    color: white;
+    font-size: 1.2rem;
+  }
+  &--img {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    img {
+      width: 80%;
+    }
+  }
+  &--info {
+    width: 50%;
+
+    p {
+      margin-top: 60px;
+      width: 50%;
+      line-height: 1.7;
+    }
+  }
+  &--btn {
+    width: 120px;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-left: 10px;
+    background: #1e1d1d;
+    border-radius: 10px;
+    display: flex;
+    padding: 15px;
+    align-items: baseline;
+    justify-content: space-between;
+    transition: 0.3s ease-in-out;
+    &:hover {
+      box-shadow: 0px 0px 8px 1px white;
+    }
+    svg {
+      font-size: 1rem;
+      margin-right: 1rem;
+    }
+  }
+}
+
+.windowGet {
+  $self: &;
+  font-size: 1rem;
+  color: white;
+  margin: auto;
+  margin-top: 200px;
+  max-height: 300px;
+  width: 80%;
+  padding: 15px 0px;
+  background: #2a2a2a;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0px 0px 17px 1px black;
+  &--info {
+    width: 50%;
+    p {
+      margin-top: 10px;
+      margin-left: 200px;
+      font-size: 1rem;
+      opacity: 0.7;
+    }
+  }
+  &--title {
+    margin-left: 200px;
+    width: 35%;
+  }
+  &--btn {
+    width: 110px;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-left: 210px;
+    background: #1e1d1d;
+    border-radius: 10px;
+    display: flex;
+    padding: 15px;
+    align-items: baseline;
+    justify-content: space-between;
+    transition: 0.3s ease-in-out;
+    &:hover {
+      box-shadow: 0px 0px 8px 1px white;
+    }
+    svg {
+      font-size: 1rem;
+      margin-right: 1rem;
+    }
+  }
+  &--image {
+    width: 50%;
+    img {
+      width: 80%;
+    }
+  }
+}

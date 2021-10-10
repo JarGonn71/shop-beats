@@ -1,0 +1,69 @@
+.block1 {
+  $self: &;
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  &--imageBox {
+    width: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    img {
+      width: 160%;
+      left: -8rem;
+    }
+  }
+  &--info {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    h1 {
+      font-size: 110px;
+      margin-left: 43px;
+      line-height: 0.9;
+      background: linear-gradient(
+        180deg,
+        rgba(151, 32, 32, 0.8637) 24%,
+        rgba(151, 32, 32, 0.29) 72%,
+        rgba(151, 32, 32, 0.23) 83%
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: #0b2349;
+      display: table;
+    }
+    .title {
+      font-size: 62px;
+      font-weight: 600;
+      line-height: 0.8;
+      margin-bottom: 60px;
+    }
+    p {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    .descriptions {
+      width: 356px;
+      font-size: 18px;
+      opacity: 0.8;
+      line-height: 1.7;
+    }
+  }
+  &--price {
+    box-shadow: 0px 5px 8px 0px #0000009e;
+    padding: 10px;
+    display: flex;
+    width: 200px;
+    background: #1e1d1d;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    margin-left: 30px;
+    cursor: pointer;
+    align-items: center;
+  }
+}
